@@ -30,6 +30,7 @@ git clone https://github.com/serverbauer/CipherShare
 # Install dependencies
 cd ciphershare
 npm install
+npx prisma migrate dev
 
 # Generate a secure encryption key
 node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
